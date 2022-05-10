@@ -1,0 +1,71 @@
+/* font-family : 글꼴을 지정하는 속성 */
+html {
+  font-size: 14px;
+}
+
+.fontFamily {
+  font-size: large;
+  font-family: "Nanum Pen Script", Courier, monospace;
+}
+
+.fontSize {
+  font-size: 20px;
+}
+.fontSize h2 {
+  /* font-size: 20px */
+  /* font-size: 0.5em; */
+  font-size: 2rem;
+  /* 
+      px : 화면의 픽셀 단위
+      em : 부모의 글자 사이즈에 대한 비율
+      rem : 문서의 글자 사이즈에 대한 비율
+    */
+}
+.fontSize p {
+  font-size: 24px;
+}
+
+.fontStyle h2 {
+  /* font-style: normal; 기본값 */
+  font-style: italic;
+}
+.fontStyle p {
+  font-style: oblique;
+}
+
+.color h2 {
+  color: #fc7369;
+}
+.color p {
+  color: rgb(79, 151, 245);
+}
+
+.textAlign {
+  text-align: left;
+}
+
+.lineHeight {
+  font-size: 24px;
+  /* line-height: 1.5em; */
+}
+.lineHeight p {
+  line-height: 1.5em;
+}
+
+.textDecoration p {
+  text-decoration: line-through;
+}
+
+.textTransform p {
+  text-transform: capitalize;
+}
+
+.textShadow h2 {
+  /* rgba : 투명도 조절 가능 */
+  text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.spacing p {
+  letter-spacing: 0.1em;
+  word-spacing: 10px;
+}
