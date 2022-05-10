@@ -1,0 +1,20 @@
+body {
+  text-align: center;
+}
+.box {
+  background-color: aquamarine;
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px 20px;
+  color: white;
+  /* box-sizing: content-box; 기본값 */
+  /* box-sizing: border-box; padding과 border 두께를 무시 */
+  display: inline-block;
+  border: 1px solid black;
+}
+span {
+  display: block;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
