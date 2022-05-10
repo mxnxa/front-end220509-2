@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>회원가입</legend>
+        <ul>
+          <li>
+            <label>
+              아이디
+              <input
+                type="text"
+                placeholder="아이디"
+                name="userId"
+                autofocus
+                required
+              />
+            </label>
+          </li>
+          <li>
+            <label>
+              이메일
+              <input type="email" placeholder="이메일" name="email" required />
+            </label>
+          </li>
+          <li>
+            <label>
+              비밀번호
+              <input
+                type="password"
+                placeholder="비밀번호"
+                name="password"
+                required
+              />
+            </label>
+          </li>
+          <li>
+            <label>
+              비밀번호 확인
+              <input type="password" placeholder="비밀번호 확인" required />
+            </label>
+          </li>
+          <li>
+            <label>
+              가입 경로
+              <select name="route" id="">
+                <option value="serch">검색</option>
+                <option value="blog">블로그</option>
+                <option value="recommend">지인추천</option>
+              </select>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>마케팅 수신 여부</legend>
+        <ul>
+          <li>
+            <label>
+              이메일 : 수신 <input type="radio" name="reciveEmail" /> 수신 안함
+              <input type="radio" name="reciveEmail" />
+            </label>
+          </li>
+          <li>
+            <label>
+              SMS : 수신 <input type="radio" name="reciveSms" /> 수신 안함
+              <input type="radio" name="reciveSms" />
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>관심사</legend>
+        <label>IT<input type="checkbox" /></label>
+        <label>미술<input type="checkbox" /></label>
+        <label>음악<input type="checkbox" /></label>
+        <label>의학<input type="checkbox" /></label>
+      </fieldset>
+      <div>
+        <button type="submit">가입하기</button>
+        <button type="reset">초기화</button>
+      </div>
+    </form>
+  </body>
+</html>
