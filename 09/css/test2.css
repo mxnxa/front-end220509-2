@@ -1,0 +1,17 @@
+body {
+  text-align: center;
+}
+.box {
+  background-color: rgb(62, 166, 250);
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+.list {
+  background-color: rgb(62, 166, 250);
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  margin-bottom: 10px;
+  /* display: inline-block; */
+}
