@@ -1,0 +1,18 @@
+a {
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  height: 220px;
+  line-height: 220px;
+  background-image: url(../../09/html/dog.jpg);
+  background-position: center;
+  text-decoration: none;
+  background-size: cover;
+  color: black;
+}
+
+a:hover {
+  color: red;
+  font-weight: bold;
+  background-size: 120%;
+}

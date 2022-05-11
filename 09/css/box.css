@@ -22,8 +22,8 @@ body {
   margin: 0; /* margin은 바깥 여백 */
 }
 .margin {
-  /* margin: 10px;  상, 하, 좌, 우 여백 10px  */
-  /* margin: 10px 0;  상, 하 10px, 좌, 우 0px */
+  /* margin: 10px; 상, 하, 좌, 우 여백 10px  */
+  margin: 10px 0; /* 상, 하 10px, 좌, 우 0px */
   /* margin: 10px 0 20px;  상 10px, 좌, 우 0, 하 20px */
   /* margin: 10px 20px 30px 40px; 위쪽부터 시계방향으로 적용 */
 }

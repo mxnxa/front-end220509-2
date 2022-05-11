@@ -1,0 +1,15 @@
+.question h2 + p, 
+.question h3 ~ p, 
+.question h3 ~ p + div a[href="https://www.daum.net"]
+{
+  color: red;
+}
+
+/* .question h3 ~ p {
+  color: red;
+}
+
+.question h3 ~ p + div a[href="https://www.daum.net"]
+{
+  color: red;
+} */

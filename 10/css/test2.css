@@ -1,0 +1,22 @@
+body {
+  height: 1500px;
+}
+.top {
+  /* width: 500; */
+  height: 200px;
+  background-image: url(../images/iPhone2.jpg);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-position: center top;
+  margin-bottom: 200px;
+  background-attachment: fixed;
+}
+.bottom {
+  /* width: 500; */
+  height: 200px;
+  background-image: url(../images/iPhone2.jpg);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-position: center;
+  background-attachment: fixed;
+}

@@ -1,0 +1,31 @@
+body {
+  height: 1500px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(166, 213, 255);
+}
+
+.imgBackground {
+  /* width: 300px; */
+  height: 500px;
+  border: 10px solid rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-top: 200px;
+  color: #fff;
+  background-image: url(../images/background.png);
+  /* background-image: url(../images/pattern.jpg); */
+  /* background-size: contain; */
+  /* background-size: cover; */
+  /* background-size: 200px 50px; */
+  background-size: cover;
+  /* background-repeat: repeat; 패턴 배경화면에 활용 */
+  background-repeat: no-repeat;
+  /* background-position: center bottom; */
+  background-position: left;
+  background-clip: padding-box;
+  background-clip: content-box;
+  background-attachment: fixed;
+}

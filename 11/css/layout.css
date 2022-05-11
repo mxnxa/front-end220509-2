@@ -1,0 +1,25 @@
+.clearFix {
+  clear: both;
+}
+
+.container .imgBox {
+  float: left;
+}
+.container .box {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  float: left;
+}
+.container .redBox {
+  /* width: 100px; */
+  height: 100px;
+  background-color: red;
+  /* clear: left; */
+}
+/* strong {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  float: left;
+} */
