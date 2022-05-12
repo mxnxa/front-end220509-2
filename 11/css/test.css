@@ -1,17 +1,30 @@
-a {
+.clearFix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.nav li a {
   color: inherit; /* 부모의 컬러를 상속 받음 */
   text-decoration: none;
   font-weight: bold;
+  /* visibility : 자리는 차지하지만, 보이지 않고 이벤트도 발생 x */
+  /* opacity : visibility와 비슷하지만, 이벤트 발생 */
+  /* visibility: hidden; */
+  /* opacity: 0; */
 }
 
 .container {
   text-align: center;
   background-color: #888;
+  /* margin: 0 auto; */
 }
 
 .nav {
-  display: inline-block;
+  /* display: inline-block; */
   /* height: 50px; */
+  width: 500px;
+  margin: 0 auto;
   padding: 10px 0;
   background-color: #777;
 }
@@ -19,14 +32,32 @@ a {
 .nav li {
   float: left;
   margin: 0 10px;
-  color: #fff;
+  color: white;
 }
 
-.nav li a {
-  display: inline-block;
+.nav li {
+  /* display: inline-block; */
   padding: 5px 10px;
-  border: 1px solid #fff;
+  border: 1px solid white;
+  background-color: #999;
   border-radius: 5px;
-  width: 90px;
+  width: 95px;
   box-sizing: border-box;
+}
+
+.nav li::before {
+  display: inline-block;
+  opacity: 0;
+  /* 이미지도 content에 넣을 수 있음. */
+  content: "";
+  width: 5px;
+  height: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.nav li:hover::before {
+  /* display: inline-block; */
+  opacity: 1;
 }
