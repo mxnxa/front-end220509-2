@@ -12,97 +12,110 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "GangwonEdu_OTFBoldA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  text-align: center;
-  overflow: hidden;
+  /* text-align: center; */
+  /* overflow: hidden; */
 }
 
 .container {
-  text-align: center;
+  /* text-align: center; */
   background-color: #888;
+  display: flex;
+  justify-content: center;
 }
 
 .container .nav {
-  display: inline-block;
+  /* display: inline-block; */
   /* width: 450px; */
   /* margin: 0 auto; */
+  display: flex;
   background-color: #777;
+  /* justify-content: space-between; */
 }
 
 .container .nav li {
-  padding: 10px 0;
-  margin: 0 30px;
-  float: left;
+  padding: 15px 0;
+  /* margin: 0 30px; */
+  /* float: left; */
+  /* display: flex; */
+  /* justify-content: space-around; */
 }
 
 .container .nav li a {
+  /* font-family: "GangwonEdu_OTFBoldA"; */
+  padding: 12px 30px;
   color: inherit;
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 1s;
 }
 
 .container .nav li a:hover {
   background-color: #999;
+  color: white;
 }
 
 .background h2 {
+  display: flex;
+  justify-content: center;
+  font-family: "GangwonEdu_OTFBoldA";
   font-size: 50px;
-  margin: 80px 0;
+  margin: 80px 0 100px;
   font-weight: 700;
 }
 
-/* .background .box li a {
-  display: block;
-  float: left;
-  width: 200px;
-  height: 250px;
-  background-image: url(../images/1.jpg);
-} */
-
-.background {
-  /* display: inline-block; */
-  /* width: 200px;
-  height: 250px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(../images/1.jpg); */
-}
-
-/* .background .box ul li:nth-child(1) a {
-  float: left;
-  background-image: url(../images/2.jpg);
-} */
-
 .main {
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .background .box1 {
-  width: 180px;
-  height: 230px;
-  float: left;
+  width: 200px;
+  height: 240px;
+  /* display: inline-block; */
+  /* float: left; */
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-image: url(../images/1.jpg);
+  background-position: center;
+  transition-property: all;
+  transition-duration: 0.5s;
 }
 .background .box2 {
-  width: 180px;
-  height: 230px;
-  float: left;
-  margin: 0 30px;
+  width: 200px;
+  height: 240px;
+  margin: 0 50px;
+  /* display: inline-block; */
+  /* float: left; */
+  /* margin: 0 30px; */
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-image: url(../images/2.jpg);
+  background-position: center;
+  transition-property: width height;
+  transition-duration: 0.5s;
 }
 .background .box3 {
-  width: 180px;
-  height: 230px;
-  float: left;
+  width: 200px;
+  height: 240px;
+  /* display: inline-block; */
+  /* float: left; */
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-image: url(../images/3.jpg);
+  background-position: center;
+  transition-property: all;
+  transition-duration: 0.5s;
 }
 
 .background .box4 {
@@ -147,19 +160,36 @@ body {
 .background .box2:hover,
 .background .box3:hover {
   background-size: 120%;
-  background-position: center;
 }
 
 .button a {
   width: 60px;
   height: 60px;
-  background-image: url(../images/sns_네이버블로그_페이스북_인스타그램_유투브_아이콘모음_8.png);
-  background-color: rgb(255, 225, 52);
+  background-image: url(../images/8679344_kakao_talk_icon.png);
   background-size: contain;
+  background-color: white;
   border-radius: 50%;
   position: fixed;
   top: 750px;
   left: 1600px;
+}
+
+/* .button a:nth-child(1) {
+  opacity: 0;
+  transition-duration: 0.5s;
+} */
+.button a:nth-child(2) {
+  opacity: 0;
+  background-image: url(../images/8679415_kakao_talk_fill_icon.png);
+  transition-duration: 0.7s;
+}
+
+/* .button a:nth-child(1):hover {
+  opacity: 0;
+} */
+
+.button a:nth-child(2):hover {
+  opacity: 1;
 }
 
 .popupBackground .popup {
@@ -169,22 +199,29 @@ body {
   border: 1px solid black;
   border-radius: 5px;
   position: absolute;
-  top: 150px;
-  left: 200px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
   z-index: 1;
+  overflow: hidden;
 }
 
 .popupBackground .popup h2 {
-  padding: 15px;
+  font-family: "GangwonEdu_OTFBoldA";
+  text-align: center;
+  padding: 15px 0 10px 0;
   border-bottom: 1px solid black;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .popupBackground .popup p {
+  text-align: left;
+  font-family: "GangwonEdu_OTFBoldA";
   padding: 15px;
 }
 
-.popupBackground {
+/* .popupBackground {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
@@ -192,4 +229,31 @@ body {
   top: 0;
   left: 0;
   z-index: 0;
+} */
+
+.popup svg {
+  position: absolute;
+  bottom: -50px;
+  /* left: -300px; */
+  animation-name: wave;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /* animation-play-state: paused; */
+  opacity: 0.7;
+}
+
+.popup svg:nth-child(3) {
+  /* left: 50px; */
+  animation-direction: alternate-reverse;
+}
+
+@keyframes wave {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translateX(-800px);
+  }
 }
