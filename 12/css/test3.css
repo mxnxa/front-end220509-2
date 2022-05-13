@@ -4,8 +4,17 @@
   clear: both;
 }
 
+@font-face {
+  font-family: "Donoun-Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Donoun-Medium.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   text-align: center;
+  overflow: hidden;
 }
 
 .container {
@@ -28,6 +37,7 @@ body {
 
 .container .nav li a {
   color: inherit;
+  font-size: 20px;
   font-weight: 700;
   text-decoration: none;
 }
@@ -41,6 +51,14 @@ body {
   margin: 80px 0;
   font-weight: 700;
 }
+
+/* .background .box li a {
+  display: block;
+  float: left;
+  width: 200px;
+  height: 250px;
+  background-image: url(../images/1.jpg);
+} */
 
 .background {
   /* display: inline-block; */
@@ -73,7 +91,7 @@ body {
   width: 180px;
   height: 230px;
   float: left;
-  margin: 0 20px;
+  margin: 0 30px;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../images/2.jpg);
@@ -130,4 +148,48 @@ body {
 .background .box3:hover {
   background-size: 120%;
   background-position: center;
+}
+
+.button a {
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/sns_네이버블로그_페이스북_인스타그램_유투브_아이콘모음_8.png);
+  background-color: rgb(255, 225, 52);
+  background-size: contain;
+  border-radius: 50%;
+  position: fixed;
+  top: 750px;
+  left: 1600px;
+}
+
+.popupBackground .popup {
+  width: 500px;
+  height: 350px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  z-index: 1;
+}
+
+.popupBackground .popup h2 {
+  padding: 15px;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+}
+
+.popupBackground .popup p {
+  padding: 15px;
+}
+
+.popupBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
