@@ -2,14 +2,14 @@
   width: 1000px;
   height: 1000px;
   background-color: #bbb;
-  position: relative;
+  /* position: relative; */
 }
 
 .inner {
   width: 500px;
   height: 300px;
   background-color: #999;
-  /* position: relative; */
+  /* position: absolute; */
 }
 
 .box {
@@ -17,10 +17,10 @@
   /* relative : static과 같이 원래 흐름에 위치(기준). 이동 o */
   /* absolute : 상위 요소 중 position 값이 static이 아닌 요소를 기준으로. */
   /* fixed : viewport 기준 */
-  position: fixed;
+  position: absolute;
   width: 100px;
   height: 100px;
   background-color: #777;
   /* top: 100px; */
-  bottom: 0;
+  bottom: 100px;
 }

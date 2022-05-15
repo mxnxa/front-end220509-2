@@ -5,14 +5,6 @@
 }
 
 @font-face {
-  font-family: "Donoun-Medium";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Donoun-Medium.woff2")
-    format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "GangwonEdu_OTFBoldA";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff")
     format("woff");
@@ -20,37 +12,22 @@
   font-style: normal;
 }
 
-body {
-  /* text-align: center; */
-  /* overflow: hidden; */
-}
-
 .container {
-  /* text-align: center; */
   background-color: #888;
   display: flex;
   justify-content: center;
 }
 
 .container .nav {
-  /* display: inline-block; */
-  /* width: 450px; */
-  /* margin: 0 auto; */
   display: flex;
   background-color: #777;
-  /* justify-content: space-between; */
 }
 
 .container .nav li {
   padding: 15px 0;
-  /* margin: 0 30px; */
-  /* float: left; */
-  /* display: flex; */
-  /* justify-content: space-around; */
 }
 
 .container .nav li a {
-  /* font-family: "GangwonEdu_OTFBoldA"; */
   padding: 12px 30px;
   color: inherit;
   font-size: 20px;
@@ -82,8 +59,6 @@ body {
 .background .box1 {
   width: 200px;
   height: 240px;
-  /* display: inline-block; */
-  /* float: left; */
   background-repeat: no-repeat;
   background-size: 100%;
   background-image: url(../images/1.jpg);
@@ -95,9 +70,6 @@ body {
   width: 200px;
   height: 240px;
   margin: 0 50px;
-  /* display: inline-block; */
-  /* float: left; */
-  /* margin: 0 30px; */
   background-repeat: no-repeat;
   background-size: 100%;
   background-image: url(../images/2.jpg);
@@ -108,8 +80,6 @@ body {
 .background .box3 {
   width: 200px;
   height: 240px;
-  /* display: inline-block; */
-  /* float: left; */
   background-repeat: no-repeat;
   background-size: 100%;
   background-image: url(../images/3.jpg);
@@ -119,7 +89,6 @@ body {
 }
 
 .background .box4 {
-  /* width: 500px; */
   height: 500px;
   clear: both;
   background-repeat: no-repeat;
@@ -131,7 +100,6 @@ body {
 }
 
 .background .box5 {
-  /* width: 500px; */
   height: 500px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -139,15 +107,10 @@ body {
   margin-top: 300px;
   background-attachment: fixed;
   background-position: right;
-  /* float: right; */
 }
 
 .background .box6 {
-  /* display: inline-block;
-  text-align: center; */
-  /* width: 500px; */
   height: 700px;
-  /* clear: both; */
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url(../images/6.jpg);
@@ -174,23 +137,25 @@ body {
   left: 1600px;
 }
 
-/* .button a:nth-child(1) {
-  opacity: 0;
-  transition-duration: 0.5s;
-} */
 .button a:nth-child(2) {
   opacity: 0;
   background-image: url(../images/8679415_kakao_talk_fill_icon.png);
   transition-duration: 0.7s;
 }
 
-/* .button a:nth-child(1):hover {
-  opacity: 0;
-} */
-
 .button a:nth-child(2):hover {
   opacity: 1;
 }
+
+/* .popupBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+} */
 
 .popupBackground .popup {
   width: 500px;
@@ -221,31 +186,19 @@ body {
   padding: 15px;
 }
 
-/* .popupBackground {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-} */
-
 .popup svg {
   position: absolute;
   bottom: -50px;
-  /* left: -300px; */
   animation-name: wave;
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   /* animation-play-state: paused; */
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .popup svg:nth-child(3) {
-  /* left: 50px; */
   animation-direction: alternate-reverse;
 }
 
