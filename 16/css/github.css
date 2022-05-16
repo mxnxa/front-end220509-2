@@ -1,0 +1,312 @@
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #24292f;
+  padding: 14px 32px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.header .menu .logo a svg {
+  fill: white;
+}
+
+.header .menu .logo a svg:hover {
+  fill: rgba(255, 255, 255, 0.7);
+}
+
+.header .menu .search {
+  margin: 0 15px;
+  align-content: center;
+  border: 1px solid #57606a;
+  border-radius: 6px;
+  display: flex;
+  padding: 4px 3px 4px 10px;
+  transition: 0.1s;
+  transition-timing-function: linear;
+  transition-delay: 0.1s;
+}
+
+.header .menu .search:focus-within {
+  transition: 0.1s 0;
+  background-color: white;
+}
+
+.header .menu .search input {
+  outline: none;
+  width: 230px;
+  /* padding: 7px 0; */
+  color: white;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  transition: 0.1s linear;
+}
+
+.header .menu .search input:focus {
+  width: 400px;
+  color: black;
+}
+
+.header .menu .search input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.header .menu .search input:focus + svg {
+  /* opacity: 0; 자리는 차지하고 보이지 않지만, 클릭 가능 */
+  /* visibility : 자리 차지하고 보이지 않고, 클릭도 불가능 */
+  visibility: hidden;
+}
+
+.header .menu .nav ul {
+  display: flex;
+}
+
+.header .menu .nav ul li a {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 10px;
+  color: white;
+}
+
+.header .menu .nav ul li a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.header .icon {
+  display: flex;
+  align-items: center;
+  /* padding: 15px 30px; */
+}
+
+.header .icon ul {
+  display: flex;
+  align-items: center;
+}
+
+.header .icon ul li {
+  position: relative;
+}
+
+.header .icon ul li + li {
+  margin-left: 15px;
+}
+
+.header .icon ul li:nth-child(2) {
+  padding-right: 13px;
+}
+
+.header .icon ul li:nth-child(2)::after {
+  content: "";
+  display: block;
+  margin-left: 5px;
+  width: 0;
+  height: 0;
+  border: 4px solid #fff;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+}
+
+.header .icon ul li:nth-child(3)::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #24292f;
+  border-radius: 50%;
+  background-color: #218bff;
+  position: absolute;
+  top: -5px;
+  right: -7px;
+}
+
+.header .icon ul li a {
+  width: 32px;
+  height: 32px;
+}
+
+.header .icon ul li a svg {
+  fill: white;
+}
+
+.header .icon ul li a svg:hover {
+  fill: rgba(255, 255, 255, 0.7);
+}
+
+.header .icon ul li a img {
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.container aside {
+  padding: 30px 0;
+  border-right: 1px solid hsla(210, 18%, 87%, 1);
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.container aside .sideBar {
+  width: 260px;
+}
+
+.container aside .sideBar .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container aside .sideBar .box h2 {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.container aside .sideBar .box a {
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgba(27, 31, 36, 0.15);
+  border-radius: 5px;
+  background-color: #2da44e;
+  color: white;
+  padding: 5px 12px;
+}
+
+.container aside .sideBar .box a:hover {
+  background-color: #2c974b;
+}
+
+.container aside .sideBar .box a svg {
+  fill: rgba(255, 255, 255, 0.8);
+  margin-right: 5px;
+}
+
+.container aside .sideBar .find {
+  margin: 10px 0 20px;
+  /* align-content: center; */
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  background-color: #f6f8fa;
+  /* display: flex; */
+  padding: 5px 3px 5px 10px;
+}
+
+.container aside .sideBar .find input {
+  outline: none;
+  width: 210px;
+  /* padding: 7px 0; */
+  color: black;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.container aside .sideBar .find:focus-within {
+  background-color: white;
+  outline: 2px solid #0969da;
+}
+
+.container aside .find input {
+  width: 100%;
+}
+
+.container aside .fileList ul li {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.container aside .fileList ul:nth-last-child(1) {
+  border-bottom: 1px solid hsla(210, 18%, 87%, 1);
+}
+
+.container aside .fileList ul li a:hover {
+  text-decoration: underline;
+}
+
+.container aside .fileList ul li a:nth-child(1) {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.container aside .fileList ul li a img:nth-child(1) {
+  border-radius: 50%;
+
+  border: 1px solid rgba(27, 31, 36, 0.15);
+}
+
+.container aside .bottom h2 {
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 15px;
+}
+.container aside .bottom p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #57606a;
+}
+
+.container main {
+  display: flex;
+  flex: 3;
+  background-color: #f6f8fa;
+  /* padding: 20px; */
+}
+
+.container main .tabList {
+  width: 550px;
+  padding: 25px 0 40px 30px;
+}
+
+.container main .tabList ul {
+  display: flex;
+}
+
+.container main .tabList::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid black;
+}
+
+.container main .tabList ul li + li {
+  margin-left: 10px;
+}
+
+.container main .tabList ul li button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.container main .tabList ul li button:hover {
+  background-color: rgba(206, 206, 206, 0.2);
+  border-radius: 10px;
+}
+
+.container main .tabList ul li button span {
+  border: 1px solid #2da44e;
+  color: #1a7f37;
+  border-radius: 10px;
+  margin-left: 10px;
+  padding: 3px 5px;
+  font-size: 11px;
+  font-weight: 700;
+}

@@ -1,21 +1,9 @@
 @font-face {
-  font-family: "GangwonEdu_OTFBoldA";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: "Donoun-Medium";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Donoun-Medium.woff2")
     format("woff2");
   font-weight: normal;
   font-style: normal;
-}
-
-body {
-  font-family: "GangwonEdu_OTFBoldA";
-  font-family: "Donoun-Medium";
 }
 
 /* 내비게이션 */
@@ -53,6 +41,7 @@ body {
 
 /* 제목 */
 #title {
+  font-family: "Donoun-Medium";
   text-align: center;
   font-size: 50px;
   font-weight: 700;
@@ -139,13 +128,8 @@ body {
   overflow: hidden;
 }
 
-/* .button a {
-  width: 10px;
-  height: 10px;
-  border: 1px solid black;
-} */
-
 .popup h2 {
+  font-family: "Donoun-Medium";
   padding: 15px;
   font-size: 18px;
   font-weight: 700;
@@ -154,6 +138,7 @@ body {
 }
 
 .popup p {
+  font-family: "Donoun-Medium";
   padding: 15px;
 }
 
@@ -193,8 +178,8 @@ body {
   background-size: cover;
   background-position: center;
   position: fixed;
-  right: 200px;
-  bottom: 160px;
+  right: 150px;
+  bottom: 150px;
   transition-duration: 0.5s;
 }
 

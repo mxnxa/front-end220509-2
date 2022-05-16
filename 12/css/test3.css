@@ -24,11 +24,14 @@
 }
 
 .container .nav li {
-  padding: 15px 0;
+  width: 150px;
+  /* padding: 15px 0; */
 }
 
 .container .nav li a {
-  padding: 12px 30px;
+  text-align: center;
+  display: block;
+  padding: 12px 0;
   color: inherit;
   font-size: 20px;
   font-weight: 700;
