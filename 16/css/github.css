@@ -157,7 +157,7 @@ a {
 }
 
 .container aside {
-  padding: 30px 0;
+  /* padding: 30px 20px; */
   border-right: 1px solid hsla(210, 18%, 87%, 1);
   display: flex;
   flex: 1;
@@ -166,7 +166,7 @@ a {
 }
 
 .container aside .sideBar {
-  width: 260px;
+  padding: 30px;
 }
 
 .container aside .sideBar .box {
@@ -265,24 +265,35 @@ a {
 
 .container main {
   display: flex;
+  padding: 30px;
   flex: 3;
   background-color: #f6f8fa;
-  /* padding: 20px; */
+  align-items: stretch;
 }
 
 .container main .tabList {
-  width: 550px;
-  padding: 25px 0 40px 30px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid hsla(210, 18%, 87%, 1);
 }
 
 .container main .tabList ul {
   display: flex;
+  position: relative;
 }
 
-.container main .tabList::after {
-  content: "";
+.container main .tabList ul li {
+  height: 40px;
+}
+
+.container main .tabList ul li.active::after {
+  position: absolute;
   display: block;
-  border-bottom: 1px solid black;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: orange;
+  border-radius: 1px;
+  bottom: -1px;
 }
 
 .container main .tabList ul li + li {
@@ -309,4 +320,206 @@ a {
   padding: 3px 5px;
   font-size: 11px;
   font-weight: 700;
+}
+
+.container main .panel .notice {
+  border: 1px solid hsla(210, 18%, 87%, 1);
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px 15px;
+}
+
+.container main .panel .notice .title {
+  margin-bottom: 10px;
+}
+
+.container main .panel .notice .title h3 {
+  font-weight: 700;
+}
+
+.container main .panel .notice .title p {
+  line-height: 25px;
+}
+
+.container main .panel .notice .introduce {
+  border: 1px solid hsla(210, 18%, 87%, 1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.container main .panel .notice .introduce .pTitle {
+  border-bottom: 1px solid hsla(210, 18%, 87%, 1);
+  padding: 20px 15px;
+}
+
+.container main .panel .notice .introduce .pBox {
+  padding: 10px 15px;
+  background-color: #f6f8fa;
+}
+
+.container main .panel .notice .introduce .pBox li + li {
+  padding-top: 10px;
+}
+
+.container main .panel .notice .button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container main .panel .notice .button ul {
+  display: flex;
+}
+
+.container main .panel .notice .button ul li a {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid hsla(210, 18%, 87%, 1);
+}
+
+.container main .panel .notice .button ul li:nth-child(2) a {
+  background-color: #2c974b;
+  color: white;
+  margin-left: 10px;
+  border: 1px solid rgba(27, 31, 36, 0.15);
+}
+
+.container main .panel .box {
+  border: 1px solid hsla(210, 18%, 87%, 1);
+  border-radius: 5px;
+  background-color: white;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.container main .panel .box h2 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 33px;
+  margin-bottom: 10px;
+}
+
+.container main .panel .box p {
+  line-height: 23px;
+  margin-bottom: 10px;
+}
+
+.container main .panel .box p a {
+  color: #0969da;
+}
+
+.container main .panel .box .button {
+  margin-top: 15px;
+}
+
+.container main .panel .box .button a {
+  display: inline-block;
+  font-weight: 700;
+  border: 1px solid hsla(210, 18%, 87%, 1);
+  border-radius: 5px;
+  background-color: #f6f8fa;
+  color: #0969da;
+  padding: 7px 15px;
+}
+
+.container main .panel .tipBox {
+  margin-top: 25px;
+  color: #57606a;
+}
+
+.container main .panel .tipBox svg {
+  fill: #57606a;
+}
+
+.container main .panel .tipBox strong {
+  font-weight: 700;
+}
+
+.container main .panel .tipBox .subscribe {
+  margin: 10px 0;
+}
+
+.container main .panel .tipBox p a {
+  color: #0969da;
+}
+
+.container main .bottomMenu {
+  display: flex;
+  margin: 32px 0;
+  color: #57606a;
+  /* justify-content: space-between; */
+  align-items: flex-start;
+}
+
+.container main .bottomMenu svg {
+  fill: #57606a;
+}
+
+.container main .bottomMenu .logo {
+  flex: 1;
+}
+.container main .bottomMenu .logo a {
+  display: flex;
+  align-items: center;
+}
+
+.container main .bottomMenu .logo a div svg {
+  margin-right: 10px;
+}
+
+.container main .bottomMenu .menu {
+  display: flex;
+  flex: 1;
+  align-items: stretch;
+}
+.container main .bottomMenu .menu ul {
+  padding-left: 30px;
+}
+.container main .bottomMenu .menu ul li {
+  flex-wrap: wrap;
+}
+
+.container main .mainRight {
+  padding-left: 40px;
+}
+
+.container main .mainRight .dashboard h2 {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 0 20px 0;
+}
+
+.container main .mainRight .dashboard ul {
+  border-left: 1px solid #d0d7de;
+}
+
+.container main .mainRight .dashboard ul li {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+}
+
+.container main .mainRight .dashboard ul li:nth-child(5) {
+  margin-left: 10px;
+}
+
+.container main .mainRight .dashboard ul li .item {
+  margin-right: 15px;
+  position: relative;
+}
+
+.container main .mainRight .dashboard ul li .item svg {
+  position: absolute;
+  left: -8px;
+  fill: #d0d7de;
+}
+
+.container main .mainRight .dashboard ul li .content p {
+  color: #57606a;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.container main .mainRight .dashboard ul li:nth-child(5) a {
+  color: #57606a;
+  font-size: 13px;
 }
