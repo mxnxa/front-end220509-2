@@ -45,7 +45,6 @@ a {
 .header .menu .search input {
   outline: none;
   width: 230px;
-  /* padding: 7px 0; */
   color: white;
   background-color: transparent;
   box-shadow: none;
@@ -86,7 +85,6 @@ a {
 .header .icon {
   display: flex;
   align-items: center;
-  /* padding: 15px 30px; */
 }
 
 .header .icon ul {
@@ -157,7 +155,6 @@ a {
 }
 
 .container aside {
-  /* padding: 30px 20px; */
   border-right: 1px solid hsla(210, 18%, 87%, 1);
   display: flex;
   flex: 1;
@@ -202,18 +199,15 @@ a {
 
 .container aside .sideBar .find {
   margin: 10px 0 20px;
-  /* align-content: center; */
   border: 1px solid #d0d7de;
   border-radius: 6px;
   background-color: #f6f8fa;
-  /* display: flex; */
   padding: 5px 3px 5px 10px;
 }
 
 .container aside .sideBar .find input {
   outline: none;
   width: 210px;
-  /* padding: 7px 0; */
   color: black;
   background-color: transparent;
   box-shadow: none;
@@ -278,11 +272,11 @@ a {
 
 .container main .tabList ul {
   display: flex;
-  position: relative;
 }
 
 .container main .tabList ul li {
   height: 40px;
+  position: relative;
 }
 
 .container main .tabList ul li.active::after {
@@ -407,6 +401,10 @@ a {
   color: #0969da;
 }
 
+.container main .panel .box p a:hover {
+  text-decoration: underline;
+}
+
 .container main .panel .box .button {
   margin-top: 15px;
 }
@@ -421,32 +419,51 @@ a {
   padding: 7px 15px;
 }
 
+.container main .panel .box .button a:hover {
+  color: #fff;
+  border-color: rgba(27, 31, 36, 0.15);
+  background-color: #0969da;
+}
+
 .container main .panel .tipBox {
   margin-top: 25px;
   color: #57606a;
 }
 
-.container main .panel .tipBox svg {
+.container main .panel .tipBox p svg {
   fill: #57606a;
 }
 
-.container main .panel .tipBox strong {
+.container main .panel .tipBox p strong {
   font-weight: 700;
-}
-
-.container main .panel .tipBox .subscribe {
-  margin: 10px 0;
 }
 
 .container main .panel .tipBox p a {
   color: #0969da;
 }
 
+.container main .panel .tipBox p a:hover {
+  text-decoration: underline;
+}
+
+.container main .panel .tipBox .subscribe {
+  margin: 10px 0;
+}
+
+.container main .panel .tipBox .subscribe a:hover {
+  text-decoration: underline;
+  color: #0969da;
+}
+
+.container main .panel .tipBox .subscribe a svg {
+  fill: #57606a;
+  margin-right: 7px;
+}
+
 .container main .bottomMenu {
   display: flex;
   margin: 32px 0;
   color: #57606a;
-  /* justify-content: space-between; */
   align-items: flex-start;
 }
 
@@ -476,6 +493,12 @@ a {
 }
 .container main .bottomMenu .menu ul li {
   flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+.container main .bottomMenu .menu ul li a:hover {
+  text-decoration: underline;
+  color: #0969da;
 }
 
 .container main .mainRight {
@@ -488,38 +511,59 @@ a {
   padding: 10px 0 20px 0;
 }
 
-.container main .mainRight .dashboard ul {
-  border-left: 1px solid #d0d7de;
-}
-
 .container main .mainRight .dashboard ul li {
   display: flex;
   justify-content: flex-start;
-  padding-bottom: 20px;
-}
-
-.container main .mainRight .dashboard ul li:nth-child(5) {
-  margin-left: 10px;
 }
 
 .container main .mainRight .dashboard ul li .item {
-  margin-right: 15px;
+  margin-right: 25px;
+  margin-top: 17px;
   position: relative;
 }
 
+.container main .mainRight .dashboard ul li:nth-child(1) .item {
+  margin-top: 0;
+}
+
+.container main .mainRight .dashboard ul li::before {
+  content: "";
+  border-left: 1px solid #d0d7de;
+}
 .container main .mainRight .dashboard ul li .item svg {
   position: absolute;
+  top: -4px;
   left: -8px;
   fill: #d0d7de;
+  width: 17px;
+  height: 17px;
+}
+
+.container main .mainRight .dashboard ul li:nth-child(5) .item svg {
+  display: none;
 }
 
 .container main .mainRight .dashboard ul li .content p {
   color: #57606a;
   font-size: 13px;
-  margin-bottom: 10px;
+  margin: 15px 0 7px 0;
+}
+
+.container main .mainRight .dashboard ul li:nth-child(1) .content p {
+  margin-top: 0;
 }
 
 .container main .mainRight .dashboard ul li:nth-child(5) a {
   color: #57606a;
   font-size: 13px;
+  margin-top: 15px;
+}
+
+.container main .mainRight .dashboard ul li a:hover {
+  text-decoration: underline;
+  color: #0969da;
+}
+
+.container main .mainRight .dashboard ul li:nth-child(5) a:hover {
+  text-decoration: none;
 }
