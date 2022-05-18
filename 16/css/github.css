@@ -4,6 +4,11 @@ a {
   font-size: 14px;
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
 /* header */
 .header {
   display: flex;
@@ -157,10 +162,11 @@ a {
 
 .container aside {
   border-right: 1px solid hsla(210, 18%, 87%, 1);
-  flex: 1;
+  flex: 0.6;
   justify-content: center;
   align-items: stretch;
   padding: 30px;
+  color: #24292f;
 }
 
 .container aside .box {
@@ -204,7 +210,7 @@ a {
 
 .container aside .find input {
   outline: none;
-  width: 210px;
+  width: 100%;
   color: black;
   background-color: transparent;
   box-shadow: none;
@@ -214,10 +220,6 @@ a {
 .container aside .find:focus-within {
   background-color: white;
   outline: 2px solid #0969da;
-}
-
-.container aside .find input {
-  width: 100%;
 }
 
 .container aside .fileList ul li {
@@ -255,29 +257,35 @@ a {
   color: #57606a;
 }
 
+/* main */
 .container main {
   display: flex;
+  justify-content: flex-start;
   padding: 30px;
   flex: 3;
   background-color: #f6f8fa;
   align-items: stretch;
 }
 
-.container main .tabList {
+.container main .mainLeft {
+  flex: 2;
+}
+
+.container main .mainLeft .tabList {
   margin-bottom: 15px;
   border-bottom: 1px solid hsla(210, 18%, 87%, 1);
 }
 
-.container main .tabList ul {
+.container main .mainLeft .tabList ul {
   display: flex;
 }
 
-.container main .tabList ul li {
+.container main .mainLeft .tabList ul li {
   height: 35px;
   position: relative;
 }
 
-.container main .tabList ul li.active::after {
+.container main .mainLeft .tabList ul li.active::after {
   position: absolute;
   display: block;
   content: "";
@@ -288,11 +296,11 @@ a {
   bottom: -1px;
 }
 
-.container main .tabList ul li + li {
+.container main .mainLeft .tabList ul li + li {
   margin-left: 10px;
 }
 
-.container main .tabList ul li button {
+.container main .mainLeft .tabList ul li button {
   cursor: pointer;
   border: none;
   border-radius: 7px;
@@ -300,16 +308,16 @@ a {
   padding: 7px;
 }
 
-.container main .tabList ul li.active button {
+.container main .mainLeft .tabList ul li.active button {
   background-color: rgba(208, 215, 222, 0.32);
   font-weight: 700;
 }
 
-.container main .tabList ul li button:hover {
+.container main .mainLeft .tabList ul li button:hover {
   background-color: rgba(208, 215, 222, 0.32);
 }
 
-.container main .tabList ul li button span {
+.container main .mainLeft .tabList ul li button span {
   border: 1px solid #2da44e;
   color: #1a7f37;
   border-radius: 10px;
@@ -429,12 +437,15 @@ a {
 }
 
 .container main .panel .tipBox {
+  display: flex;
+  align-items: flex-start;
   margin-top: 25px;
   color: #57606a;
 }
 
-.container main .panel .tipBox p svg {
+.container main .panel .tipBox svg {
   fill: #57606a;
+  margin-right: 7px;
 }
 
 .container main .panel .tipBox p strong {
@@ -449,16 +460,26 @@ a {
   text-decoration: underline;
 }
 
-.container main .panel .tipBox .subscribe {
+.container main .panel .subscribe {
+  color: #57606a;
   margin: 10px 0;
 }
 
-.container main .panel .tipBox .subscribe a:hover {
+.container main .panel .subscribe a {
+  display: flex;
+  align-items: center;
+}
+
+.container main .panel .subscribe a:hover {
   text-decoration: underline;
   color: #0969da;
 }
 
-.container main .panel .tipBox .subscribe a svg {
+.container main .panel .subscribe a:hover svg {
+  fill: #0969da;
+}
+
+.container main .panel .subscribe a svg {
   fill: #57606a;
   margin-right: 7px;
 }
@@ -470,19 +491,21 @@ a {
   align-items: flex-start;
 }
 
-.container main .bottomMenu svg {
-  fill: #57606a;
-}
-
 .container main .bottomMenu .logo {
   flex: 1;
 }
+
 .container main .bottomMenu .logo a {
   display: flex;
   align-items: center;
 }
 
+.container main .bottomMenu .logo a:hover div svg {
+  fill: #57606a;
+}
+
 .container main .bottomMenu .logo a div svg {
+  fill: #6e7781;
   margin-right: 10px;
 }
 
@@ -505,7 +528,9 @@ a {
 }
 
 .container main .mainRight {
-  padding-left: 40px;
+  flex: 0.7;
+  padding-left: 50px;
+  padding-right: 150px;
 }
 
 .container main .mainRight .dashboard h2 {
