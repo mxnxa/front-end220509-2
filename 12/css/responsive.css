@@ -1,0 +1,46 @@
+@media all and (max-width: 720px) {
+  .nav {
+    height: 49px;
+  }
+
+  .nav .menu span {
+    display: block;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .nav ul:hover {
+    overflow: visible;
+  }
+
+  .nav ul li {
+    width: 250px;
+  }
+
+  .container ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container ul li + li {
+    margin-top: 30px;
+  }
+
+  .container ul li a {
+    width: 240px;
+    height: 280px;
+  }
+
+  .background ul li {
+    background-size: 400px;
+  }
+
+  .chattButton a {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+}
