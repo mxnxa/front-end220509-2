@@ -528,9 +528,8 @@ body {
 }
 
 .container main .mainRight {
-  flex: 0.7;
+  flex: 0.6;
   padding-left: 50px;
-  padding-right: 150px;
 }
 
 .container main .mainRight .dashboard h2 {
@@ -558,10 +557,11 @@ body {
   content: "";
   border-left: 1px solid #d0d7de;
 }
+
 .container main .mainRight .dashboard ul li .item svg {
   position: absolute;
   top: -4px;
-  left: -8px;
+  left: -9px;
   fill: #d0d7de;
   width: 17px;
   height: 17px;
@@ -579,6 +579,10 @@ body {
 
 .container main .mainRight .dashboard ul li:nth-child(1) .content p {
   margin-top: 0;
+}
+
+.container main .mainRight .dashboard ul li .content a {
+  line-height: 20px;
 }
 
 .container main .mainRight .dashboard ul li:nth-child(5) a {
