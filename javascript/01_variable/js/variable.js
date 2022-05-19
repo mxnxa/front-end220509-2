@@ -9,7 +9,7 @@
 var str;
 
 // 변수 할당 => 변수라는 공간에 데이터를 저장.
-str = "seok";
+str = "minha";
 
 // 변수 선언과 할당은 동시에 할 수 있다.
 var a = 1;
@@ -35,6 +35,7 @@ document.write(myAge);
 
 // 자료형 //
 // 1. 숫자형 : 정수와 실수를 Number라는 하나의 데이터형으로 다룬다. => 실수의 정밀한 계산 x
+// JS에서는 정밀한 실수 계산을 다루지 않는 것이 좋다.
 console.log(typeof 123.123);
 console.log(0.1 + 0.2);
 
@@ -74,7 +75,7 @@ console.log(human1);
 console.log(human1.name);
 console.log(human1.phone.price);
 
-// 문제 num1과 num2의 값을 서로 바꾸기
+// 문제) num1과 num2의 값을 서로 바꾸기
 var num1 = 10;
 var num2 = 100;
 var temp = num2;
@@ -82,3 +83,16 @@ var temp = num2;
 num2 = num1;
 num1 = temp;
 console.log(num1, num2);
+
+// let, const
+// 1. let
+// 재선언을 허용하지 않는다. => 같은 이름으로 선언하는 것 불가능
+// 변수 호이스팅 발생 x
+// console.log(str02);
+let str02 = "minha";
+
+// 2. const
+// 상수 : 변하지 않는 수 => 재선언 or 재할당 x
+// 호이스팅 발생 x
+const country = "korea";
+country = "japen";
