@@ -9,12 +9,12 @@
 
   .nav ul {
     flex-direction: column;
-    overflow: hidden;
+    /* overflow: visible; */
   }
 
-  .nav ul:hover {
+  /* .nav ul:hover {
     overflow: visible;
-  }
+  } */
 
   .nav ul li {
     width: 250px;

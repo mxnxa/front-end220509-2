@@ -10,7 +10,8 @@
 .nav {
   display: flex;
   justify-content: center;
-  background-color: #888;
+  /* background-color: rgb(56, 171, 238); */
+  background-color: rgb(70, 200, 255);
 }
 
 .nav .menu {
@@ -32,6 +33,10 @@
   margin-top: 5px;
 }
 
+.nav .nav2 {
+  overflow: hidden;
+}
+
 .nav ul {
   display: flex;
   z-index: 0;
@@ -40,7 +45,7 @@
 .nav ul li {
   width: 150px;
   font-size: 23px;
-  background-color: #777;
+  background-color: rgb(33, 185, 245);
   color: white;
 }
 
@@ -57,7 +62,7 @@
 }
 
 .nav ul li a:hover {
-  background-color: #999;
+  background-color: rgb(4, 161, 228);
   color: black;
 }
 
