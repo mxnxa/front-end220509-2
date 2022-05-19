@@ -1,20 +1,16 @@
-@media all and (max-width: 720px) {
-  .nav {
-    height: 49px;
-  }
-
+@media all and (max-width: 800px) {
   .nav .menu span {
     display: block;
   }
 
   .nav ul {
     flex-direction: column;
-    /* overflow: visible; */
+    overflow: hidden;
   }
 
-  /* .nav ul:hover {
+  .nav ul:hover {
     overflow: visible;
-  } */
+  }
 
   .nav ul li {
     width: 250px;
@@ -35,12 +31,11 @@
   }
 
   .background ul li {
-    background-size: 400px;
+    background-size: 600px;
   }
 
-  .chattButton a {
-    position: fixed;
-    right: 0;
-    bottom: 0;
+  .chatButton a img {
+    right: 90px;
+    bottom: 100px;
   }
 }

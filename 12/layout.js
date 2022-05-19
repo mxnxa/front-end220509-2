@@ -1,10 +1,10 @@
-let nav = document.querySelector(".nav2");
-let btns = document.querySelector(".menu");
+let nav = document.querySelector(".nav ul");
+let btn = document.querySelector(".menu");
 
-btns.onclick = function () {
-  if (nav.classList.contains("nav2")) {
-    nav.classList.remove("nav2");
+btn.onclick = function () {
+  if (nav.classList.contains("active")) {
+    nav.classList.remove("active");
   } else {
-    nav.classList.add("nav2");
+    nav.classList.add("active");
   }
 };
