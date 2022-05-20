@@ -27,8 +27,8 @@ var func3 = () => {
 func3();
 
 // 매개변수(parameter)
-// 함수 안에서 사용할 수 있는 변수 => 함수를 실행할 때 () 안에 입력
-// 실제로 변수에 입력되는 값 => 인자(argument)
+// 함수 안에서 사용할 수 있는 값 => 함수를 실행할 때 () 안에 입력
+// 실제로 매개변수에 입력되는 값 => 인자(argument)
 // 매개변수는 원하는 만큼 선언 => 매개변수와 인자의 개수가 달라도 오류 발생 x
 // (a = 3) => 매개변수 a에 아무 값도 입력하지 않았을 때 기본값 3으로 사용
 
@@ -99,3 +99,18 @@ resultNum();
 resultNum();
 resultNum();
 resultNum();
+
+// var
+// 함수 코드 블록 안에서 선언시에는 코드 블록 밖에서는 사용 불가
+// 일반 코드 블록 안에서 선언시에는 코드 블록 밖에서도 사용 가능.
+function double(a) {
+  var varNum = 2;
+  return a * varNum;
+}
+{
+  let firstNum = 1;
+  var secondNum = 2;
+}
+console.log(secondNum);
+console.log(varNum);
+console.log(firstNum);
