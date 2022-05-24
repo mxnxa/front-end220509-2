@@ -1,6 +1,7 @@
 body {
   background-color: #f5f6f7;
   height: 100vh;
+  /* font-family: "Roboto", "Noto Sans KR"; */
 }
 
 a {
@@ -18,25 +19,17 @@ header {
 }
 
 header .logo {
-  /* display: flex; */
-  /* align-items: center; */
   width: 1180px;
-}
-
-header .logo img {
-  width: 99px;
-  height: 28px;
 }
 
 /* main */
 main {
-  /* height: 578px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* flex: 1; */
 }
+
 main .loginBox {
   display: flex;
   justify-content: center;
@@ -58,6 +51,11 @@ main .loginBox .wrapper .left {
   justify-content: center;
   align-items: center;
   width: 50%;
+}
+
+main .loginBox .wrapper .left form {
+  display: flex;
+  flex-direction: column;
 }
 
 main .loginBox .wrapper .left h3 {
@@ -97,8 +95,20 @@ main .loginBox .wrapper .left button {
 
 main .loginBox .wrapper .left .bottomWrapper {
   display: flex;
-  width: 353px;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+main .loginBox .wrapper .left .bottomWrapper:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+main .loginBox .wrapper .left .bottomWrapper a {
+  padding: 4px 15px;
+}
+
+main .loginBox .wrapper .left .bottomWrapper a:nth-child(2) {
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
 }
 
 main .loginBox .wrapper .right {
@@ -114,6 +124,7 @@ main .loginBox .wrapper .right p {
   margin-bottom: 30px;
 }
 
+/* footer */
 footer .menu {
   height: 46px;
   display: flex;
