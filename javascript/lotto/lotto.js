@@ -53,6 +53,11 @@ for (let i = 0; i < arr.length; i++) {
 console.log(arr);
 
 // filter : 조건의 참, 거짓을 반환 => return 사용.
+// filter함수는 return 값이 true인 값만 모아서 배열로 반환 => return boolean 값이어야 한다.
+
+// 화살표 함수는 {}(코드블록) 생략시 바로 값을 return
+// let resultArr = arr.filter((item) => item.id !== 3); 아래 코드와 동일하게 동작
+
 let resultArr = arr.filter(function (item) {
   return item.id !== 3;
 });
@@ -62,3 +67,14 @@ console.log(resultArr);
 //   return a.id !== 3;
 // });
 // console.log(resultArr);
+
+// 화살표 함수 이용한 sum 함수
+const sum = (a, b) => a + b;
+console.log(sum(1, 2));
+
+// 원시값 : 숫자, 문자, 불리언 등 변하지 않는 값.
+// 참조값 : 값을 변경하면 참조하는 주소가 변경됨.
+let obj = { name: "minha" };
+let copyObj = obj;
+copyObj.name = "song";
+console.log(obj, copyObj);
