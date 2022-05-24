@@ -28,3 +28,37 @@ selectedNum.forEach(function (num) {
 });
 
 // 배열 관련 함수 => forEach, map, filter
+
+// 문제) 배열함수로 id: 3 아이템 빼고 남기기. 골라내는 함수.
+/* 
+  결과
+    let resultArr = [
+      { id: 1, text: "HTML" },
+      { id: 2, text: "CSS" },
+      { id: 4, text: "React" },
+    ];
+*/
+
+let arr = [
+  { id: 1, text: "HTML" },
+  { id: 2, text: "CSS" },
+  { id: 3, text: "JavaScript" },
+  { id: 4, text: "React" },
+];
+
+console.log(arr);
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i].id === 3) arr.splice(i, 1);
+}
+console.log(arr);
+
+// filter : 조건의 참, 거짓을 반환 => return 사용.
+let resultArr = arr.filter(function (item) {
+  return item.id !== 3;
+});
+console.log(resultArr);
+
+// let resultArr = arr.filter((a) => {
+//   return a.id !== 3;
+// });
+// console.log(resultArr);
