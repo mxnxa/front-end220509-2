@@ -1,0 +1,207 @@
+body,
+button {
+  background-color: #f5f6f7;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+body {
+  /* width: 1443px; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* header */
+header {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+header .logo {
+  width: 1180px;
+}
+
+/* main */
+
+main {
+  height: 74vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .loginBox {
+  width: 1115px;
+  height: 578px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 2px 2px 7px 0 rgb(0 0 0 / 4%);
+}
+
+main .loginBox .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+main .loginBox .left .titleBox {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+main .loginBox .left .titleBox h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+main .loginBox .left .titleBox p {
+  font-size: 15px;
+}
+
+main .loginBox .left form {
+  padding: 0 103px;
+}
+
+main .loginBox .left form input {
+  width: 100%;
+  padding: 13px 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+main .loginBox .left form button {
+  width: 100%;
+  height: 47px;
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #000;
+  border-radius: 3px;
+  /* box-sizing: border-box; */
+}
+
+main .loginBox .left .accountBtns {
+  margin-top: 25px;
+}
+
+main .loginBox .left .accountBtns a {
+  padding: 3px 17px;
+}
+
+main .loginBox .left .accountBtns a:nth-child(2) {
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+}
+
+main .loginBox .right p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  font-family: "sans-serif";
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #d1d1d1;
+}
+
+footer .footerMenu {
+  width: 1180px;
+  padding: 15px 0;
+}
+
+footer .footerMenu a {
+  color: #4a4a4a;
+  font-size: 15px;
+}
+
+footer .footerMenu a + a {
+  margin-left: 60px;
+}
+
+footer .info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #d1d1d1;
+}
+
+footer .info .wrapper {
+  width: 1180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+footer .info .wrapper .leftContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .info .wrapper .infoLogo {
+  margin-right: 40px;
+}
+
+footer .info .wrapper .about p {
+  color: #4a4a4a;
+  font-size: 14px;
+  line-height: 1.4em;
+  font-family: "Noto Sans KR";
+}
+
+footer .info .wrapper .about p:nth-last-child(1) {
+  margin-top: 20px;
+}
+
+footer .info .wrapper .rightContent .contact {
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  border-left: 1px solid #d1d1d1;
+  padding-left: 30px;
+}
+
+footer .info .wrapper .rightContent .contact h3 {
+  margin-bottom: 25px;
+  font-size: 17px;
+}
+
+footer .info .wrapper .rightContent .contact p {
+  line-height: 1.6em;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+footer .info .wrapper .rightContent .contact p span {
+  display: inline-block;
+  width: 75px;
+  font-weight: 500;
+  color: #000;
+}
+
+footer .info .wrapper .rightContent .contact p a {
+  color: #000;
+}
+
+footer .info .wrapper .rightContent .contact p a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}

@@ -53,9 +53,8 @@ main .loginBox .wrapper .left {
   width: 50%;
 }
 
-main .loginBox .wrapper .left form {
-  display: flex;
-  flex-direction: column;
+#login {
+  text-align: center;
 }
 
 main .loginBox .wrapper .left h3 {
@@ -70,7 +69,12 @@ main .loginBox .wrapper .left p {
   margin-bottom: 35px;
 }
 
-main .loginBox .wrapper .left input {
+main .loginBox .wrapper .left form {
+  display: flex;
+  flex-direction: column;
+}
+
+main .loginBox .wrapper .left form input {
   width: 353px;
   height: 43px;
   padding: 0 10px;
@@ -79,7 +83,7 @@ main .loginBox .wrapper .left input {
   border: 1px solid #ccc;
 }
 
-main .loginBox .wrapper .left button {
+main .loginBox .wrapper .left form button {
   width: 353px;
   height: 47px;
   margin-top: 27px;
@@ -109,6 +113,11 @@ main .loginBox .wrapper .left .bottomWrapper a {
 main .loginBox .wrapper .left .bottomWrapper a:nth-child(2) {
   border-left: 1px solid #dedede;
   border-right: 1px solid #dedede;
+}
+
+main .loginBox .wrapper .left .findId {
+  display: none;
+  text-align: center;
 }
 
 main .loginBox .wrapper .right {

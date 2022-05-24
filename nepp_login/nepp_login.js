@@ -29,3 +29,11 @@ btns.forEach((item, idx) => {
     item.style.color = "red";
   }
 });
+
+let findIdBtn = document.querySelector("#findId");
+
+findIdBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector("#login").style.display = "none";
+  document.querySelector(".findId").style.display = "block";
+});
