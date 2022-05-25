@@ -1,6 +1,8 @@
 body {
-  font-family: "Noto Serif", "Noto Sans KR", "맑은 고딕", "돋움", Dotum, "굴림",
-    Gulim, Sans-serif;
+  color: #444;
+  font-weight: 400;
+  font-family: "Noto Serif", "Noto Sans KR", "맑은 고딕", "돋움", "Dotum",
+    "굴림", "Gulim", Sans-serif;
 }
 
 a {
@@ -14,43 +16,48 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
+  position: relative;
 }
 
 /* header */
 header {
-  padding-top: 10px;
+  width: 100%;
+  height: 110px;
+  padding-top: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 header .logo {
   position: absolute;
+  top: 40px;
+  left: 75px;
 }
 
 header .nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 0 63px;
+  width: 1480px;
+  height: 100%;
+  margin: 0 auto;
 }
 
 header .nav .topNav {
+  height: 100%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 header .nav .topNav > li {
   text-align: center;
-  width: 100%;
   position: relative;
+  padding: 0 40px;
 }
 
 header .nav .topNav > li > a {
-  display: block;
-  height: 110px;
-  line-height: 110px;
   color: #444;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 0 40px;
+  font-size: 19px;
+  font-weight: 500;
 }
 
 header .nav .topNav > li:hover .subNav {
@@ -87,15 +94,27 @@ header .nav .topNav li .subNav > li a:hover {
 }
 
 /* main */
+.container {
+  width: 1760px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 main .visual .container {
-  display: flex;
-  justify-content: flex-end;
-  margin: 200px 50px 0 0;
+  height: 100vh;
 }
 
 main .visual .title {
-  margin-right: 80px;
+  position: absolute;
+  top: 50%;
+  left: 350px;
+  transform: translateY(-50%);
 }
+
 main .visual .title p {
   font-family: "Noto Serif KR";
   font-size: 30px;
@@ -115,64 +134,84 @@ main .visual .title .button {
   box-sizing: border-box;
   background-color: #293f3a;
   border-radius: 40px;
-  margin-top: 80px;
+  margin-top: 90px;
+  position: relative;
 }
 
 main .visual .title .button a {
   display: block;
   width: 100%;
   height: 74px;
-  text-align: center;
   line-height: 74px;
-  padding: 0 20px;
+  padding: 0 40px;
   color: #fff;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 400;
   box-sizing: border-box;
 }
 
+main .visual .title .button img {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+}
+
+main .visual .visualImg {
+  width: 1013px;
+  height: 647px;
+  background-image: url(./images/icon_mainVisual.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  position: absolute;
+  bottom: -28px;
+  right: 50px;
+}
+
+/* article */
 main article .articleTop {
-  width: 1180px;
-  margin: 100px auto;
   text-align: center;
+  padding: 140px 0 160px 0;
 }
 
-main article .articleIcon .title {
-  color: #222;
-}
-
-main article .articleTop .title h3 {
+main article .articleTop .container .wrapper .title h3 {
   font-family: "Noto Serif KR";
   font-size: 40px;
   font-weight: 300;
 }
 
-main article .articleTop .title p {
+main article .articleTop .container .wrapper .title p {
   margin: 24px 0 60px 0;
 }
 
-main article .articleTop .articleIcon ul {
+main article .articleTop .container .wrapper .articleIcon .title {
+  color: #222;
+}
+
+main article .articleTop .container .wrapper .articleIcon ul {
   display: flex;
   text-align: center;
   justify-content: space-between;
 }
 
-main article .articleTop .articleIcon ul li:hover div {
+main article .articleTop .container .wrapper .articleIcon ul li:hover div {
   background-image: url(./images/icon_diagnosis01-w.png);
   background-color: #293f3a;
 }
 
-main article .articleTop .articleIcon ul li:hover span {
+main article .articleTop .container .wrapper .articleIcon ul li:hover span {
   font-weight: 700;
 }
 
-main article .articleTop .articleIcon ul li a {
+main article .articleTop .container .wrapper .articleIcon ul li a {
   display: block;
   width: auto;
   height: auto;
   margin: 0 auto;
 }
 
-main article .articleTop .articleIcon ul li a div {
+main article .articleTop .container .wrapper .articleIcon ul li a div {
   width: 108px;
   height: 108px;
   margin-bottom: 20px;
@@ -185,41 +224,46 @@ main article .articleTop .articleIcon ul li a div {
   transition-duration: 0.5s;
 }
 
-main article .articleTop .articleIcon ul li a span {
+main article .articleTop .container .wrapper .articleIcon ul li a span {
   transition-duration: 0.5s;
 }
 
 main article .articleBottom {
-  padding: 0 350px;
   background-color: #f8f8f8;
 }
 
-main article .articleBottom .wrapper .leftContent .top {
-  border: 1px solid #a8a8a8;
-  border-radius: 11px;
-  background-color: #fff;
-}
-
-main article .articleBottom .wrapper .leftContent .top ul {
+main article .articleBottom .wrapper {
   display: flex;
 }
 
-main article .articleBottom .wrapper .leftContent .top ul li + li {
+main article .articleBottom .container .wrapper .leftContent .top {
+  border: 1px solid #a8a8a8;
+  border-radius: 11px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+main article .articleBottom .container .wrapper .leftContent .top ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+main article .articleBottom .container .wrapper .leftContent .top ul li + li {
   border-left: 1px solid #ebebeb;
 }
 
-main article .articleBottom .wrapper .leftContent .top ul li a {
+main article .articleBottom .container .wrapper .leftContent .top ul li a {
   display: block;
-  padding: 30px 60px;
+  padding: 30px 40px;
   font-size: 17px;
   font-weight: 700;
 }
 
-main article .articleBottom .wrapper .leftContent .bottom {
+main article .articleBottom .container .wrapper .leftContent .bottom {
   margin: 50px 40px;
 }
 
-main article .articleBottom .wrapper .leftContent .bottom ul li {
+main article .articleBottom .container .wrapper .leftContent .bottom ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -227,29 +271,101 @@ main article .articleBottom .wrapper .leftContent .bottom ul li {
   padding: 30px 0;
 }
 
-main article .articleBottom .wrapper .leftContent .bottom ul li dl {
+main article .articleBottom .container .wrapper .leftContent .bottom ul li dl {
   text-align: center;
 }
 
-main article .articleBottom .wrapper .leftContent .bottom ul li dl dt {
+main
+  article
+  .articleBottom
+  .container
+  .wrapper
+  .leftContent
+  .bottom
+  ul
+  li
+  dl
+  dt {
   font-size: 44px;
   margin-bottom: 15px;
 }
 
-main article .articleBottom .wrapper .leftContent .bottom ul li dl dd {
+main
+  article
+  .articleBottom
+  .container
+  .wrapper
+  .leftContent
+  .bottom
+  ul
+  li
+  dl
+  dd {
   font-size: 15px;
 }
 
-main article .articleBottom .wrapper .leftContent .bottom ul li a p {
+main article .articleBottom .container .wrapper .leftContent .bottom ul li a p {
   font-size: 18px;
   margin-bottom: 15px;
 }
 
-main article .articleBottom .wrapper .leftContent .bottom ul li a span {
+main
+  article
+  .articleBottom
+  .container
+  .wrapper
+  .leftContent
+  .bottom
+  ul
+  li
+  a
+  span {
   display: inline-block;
   width: 500px;
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
   overflow: hidden;
+}
+
+main article .articleBottom .container .wrapper .rightContent {
+  width: 40%;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+main article .articleBottom .container .wrapper .rightContent .top {
+  background: url(./images/img_info.jpg) no-repeat 50%;
+  background-size: cover;
+  padding: 100px 45px 50px 45px;
+  box-sizing: border-box;
+  line-height: 2.5em;
+}
+
+main article .articleBottom .container .wrapper .rightContent .top h4 {
+  font-family: "Noto Serif KR";
+  font-size: 28px;
+  font-weight: 100;
+}
+
+main article .articleBottom .container .wrapper .rightContent .bottom {
+  color: #444;
+  padding: 30px;
+  background-color: #fff;
+}
+
+main article .articleBottom .container .wrapper .rightContent .bottom > span {
+  display: block;
+  width: 113px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  color: #fff;
+  background-color: #293f3a;
+  border-radius: 16px;
+}
+
+main article .articleBottom .container .wrapper .rightContent .bottom > a {
+  font: 700 45px "adobe-garamond-pro";
+  color: #293f3a;
 }
