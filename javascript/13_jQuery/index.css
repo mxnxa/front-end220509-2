@@ -1,0 +1,32 @@
+.container {
+  width: 1000px;
+  height: 500px;
+  margin: 100px auto 0;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+}
+
+.box.lightgray {
+  background-color: lightgray;
+}
+
+.box:nth-child(2) {
+  margin: 0 10px;
+}
+
+.todo li {
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.todo li.active {
+  color: lightcoral;
+}
