@@ -51,22 +51,23 @@ header .nav .topNav {
 header .nav .topNav > li {
   text-align: center;
   position: relative;
-  padding: 0 40px;
 }
 
 header .nav .topNav > li > a {
   color: #444;
   font-size: 19px;
   font-weight: 500;
+  display: block;
+  padding: 40px;
 }
 
 header .nav .topNav > li:hover .subNav {
-  display: block;
+  /* display: block; */
 }
 
 header .nav .topNav li .subNav {
   position: absolute;
-  top: 50px;
+  top: 80px;
   left: 0;
   display: none;
   width: 100% !important;
@@ -83,11 +84,13 @@ header .nav .topNav li .subNav li + li {
 
 header .nav .topNav li .subNav > li a {
   display: block;
+  color: #333;
   font-size: 14px;
-  font-weight: 700;
-  padding: 14px 15px;
+  font-weight: 400;
+  padding: 14px 0;
   text-align: center;
   line-height: 1.6em;
+  transition-duration: 0.5s;
 }
 
 header .nav .topNav li .subNav > li a:hover {
@@ -116,6 +119,7 @@ main .visual .title {
   top: 50%;
   left: 350px;
   transform: translateY(-50%);
+  z-index: 98;
 }
 
 main .visual .title p {
@@ -188,7 +192,7 @@ main article .articleTop .container .wrapper .title p {
   margin: 24px 0 60px 0;
 }
 
-main article .articleTop .container .wrapper .articleIcon .title {
+main article .articleTop .container .wrapper .title {
   color: #222;
 }
 
@@ -196,15 +200,6 @@ main article .articleTop .container .wrapper .articleIcon ul {
   display: flex;
   text-align: center;
   justify-content: space-between;
-}
-
-main article .articleTop .container .wrapper .articleIcon ul li:hover div {
-  background-image: url(./images/icon_diagnosis01-w.png);
-  background-color: #293f3a;
-}
-
-main article .articleTop .container .wrapper .articleIcon ul li:hover span {
-  font-weight: 700;
 }
 
 main article .articleTop .container .wrapper .articleIcon ul li a {
@@ -227,8 +222,192 @@ main article .articleTop .container .wrapper .articleIcon ul li a div {
   transition-duration: 0.5s;
 }
 
+main
+  article
+  .articleTop
+  .container
+  .wrapper
+  .articleIcon
+  ul
+  li:nth-child(2)
+  a
+  div {
+  background-image: url(./images/icon_diagnosis02.png);
+}
+
+main
+  article
+  .articleTop
+  .container
+  .wrapper
+  .articleIcon
+  ul
+  li:nth-child(3)
+  a
+  div {
+  background-image: url(./images/icon_diagnosis03.png);
+}
+
+main
+  article
+  .articleTop
+  .container
+  .wrapper
+  .articleIcon
+  ul
+  li:nth-child(4)
+  a
+  div {
+  background-image: url(./images/icon_diagnosis04.png);
+}
+
+main
+  article
+  .articleTop
+  .container
+  .wrapper
+  .articleIcon
+  ul
+  li:nth-child(5)
+  a
+  div {
+  background-image: url(./images/icon_diagnosis05.png);
+}
+
+main
+  article
+  .articleTop
+  .container
+  .wrapper
+  .articleIcon
+  ul
+  li:nth-child(6)
+  a
+  div {
+  background-image: url(./images/icon_diagnosis06.png);
+}
+
+main
+  article
+  .articleTop
+  .container
+  .wrapper
+  .articleIcon
+  ul
+  li:nth-child(7)
+  a
+  div {
+  background-image: url(./images/icon_diagnosis07.png);
+}
+
+main
+  article
+  .articleTop
+  .container
+  .wrapper
+  .articleIcon
+  ul
+  li:nth-child(8)
+  a
+  div {
+  background-image: url(./images/icon_diagnosis08.png);
+}
+
+main article .articleTop .container .wrapper .articleIcon ul li:hover div {
+  background-image: url(./images/icon_diagnosis01-w.png);
+  background-color: #293f3a;
+}
+
+main
+  article
+  .articleTop
+  .container
+  .wrapper
+  .articleIcon
+  ul
+  li:nth-child(2):hover
+  div {
+  background-image: url(./images/icon_diagnosis02-w.png);
+}
+
+main
+  article
+  .articleTop
+  .container
+  .wrapper
+  .articleIcon
+  ul
+  li:nth-child(3):hover
+  div {
+  background-image: url(./images/icon_diagnosis03-w.png);
+}
+
+main
+  article
+  .articleTop
+  .container
+  .wrapper
+  .articleIcon
+  ul
+  li:nth-child(4):hover
+  div {
+  background-image: url(./images/icon_diagnosis04-w.png);
+}
+
+main
+  article
+  .articleTop
+  .container
+  .wrapper
+  .articleIcon
+  ul
+  li:nth-child(5):hover
+  div {
+  background-image: url(./images/icon_diagnosis05-w.png);
+}
+
+main
+  article
+  .articleTop
+  .container
+  .wrapper
+  .articleIcon
+  ul
+  li:nth-child(6):hover
+  div {
+  background-image: url(./images/icon_diagnosis06-w.png);
+}
+
+main
+  article
+  .articleTop
+  .container
+  .wrapper
+  .articleIcon
+  ul
+  li:nth-child(7):hover
+  div {
+  background-image: url(./images/icon_diagnosis07-w.png);
+}
+
+main
+  article
+  .articleTop
+  .container
+  .wrapper
+  .articleIcon
+  ul
+  li:nth-child(8):hover
+  div {
+  background-image: url(./images/icon_diagnosis08-w.png);
+}
+
 main article .articleTop .container .wrapper .articleIcon ul li a span {
   transition-duration: 0.5s;
+}
+
+main article .articleTop .container .wrapper .articleIcon ul li:hover span {
+  font-weight: 700;
 }
 
 main article .articleBottom {
@@ -237,6 +416,12 @@ main article .articleBottom {
 
 main article .articleBottom .wrapper {
   display: flex;
+  position: relative;
+  top: -60px;
+}
+
+main article .articleBottom .container .wrapper .leftContent {
+  width: 60%;
 }
 
 main article .articleBottom .container .wrapper .leftContent .top {
@@ -249,18 +434,53 @@ main article .articleBottom .container .wrapper .leftContent .top {
 
 main article .articleBottom .container .wrapper .leftContent .top ul {
   display: flex;
-  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+main article .articleBottom .container .wrapper .leftContent .top ul li {
+  flex: 1;
 }
 
 main article .articleBottom .container .wrapper .leftContent .top ul li + li {
-  border-left: 1px solid #ebebeb;
+  /* border-left: 1px solid #ebebeb; */
 }
 
 main article .articleBottom .container .wrapper .leftContent .top ul li a {
   display: block;
-  padding: 30px 40px;
+  width: 100%;
+  height: 100%;
+  padding: 36px 40px;
   font-size: 17px;
   font-weight: 700;
+  box-sizing: border-box;
+  position: relative;
+  box-sizing: border-box;
+}
+
+main
+  article
+  .articleBottom
+  .container
+  .wrapper
+  .leftContent
+  .top
+  ul
+  li
+  a::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-image: url(./images/icon_arrow1.svg);
+  background-color: #d0d0d0;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 6px 9px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
 }
 
 main article .articleBottom .container .wrapper .leftContent .bottom {
@@ -271,8 +491,21 @@ main article .articleBottom .container .wrapper .leftContent .bottom ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ccc;
+
   padding: 30px 0;
+}
+
+main
+  article
+  .articleBottom
+  .container
+  .wrapper
+  .leftContent
+  .bottom
+  ul
+  li
+  + li {
+  border-top: 1px solid #ccc;
 }
 
 main article .articleBottom .container .wrapper .leftContent .bottom ul li dl {
@@ -349,15 +582,14 @@ main article .articleBottom .container .wrapper .rightContent .top {
 }
 
 main article .articleBottom .container .wrapper .rightContent .top h4 {
-  /* font-family: "Noto Serif KR"; */
+  font-family: "Noto Serif KR";
   font-size: 28px;
   font-weight: 100;
-  /* font-family: "adobe-garamond-pro"; */
 }
 
 main article .articleBottom .container .wrapper .rightContent .bottom {
   color: #444;
-  padding: 30px;
+  padding: 40px;
   background-color: #fff;
 }
 
@@ -373,6 +605,136 @@ main article .articleBottom .container .wrapper .rightContent .bottom > span {
 }
 
 main article .articleBottom .container .wrapper .rightContent .bottom > a {
+  display: block;
   font: 700 45px "adobe-garamond-pro";
   color: #293f3a;
+  margin: 10px 0 30px 0;
+}
+
+main article .articleBottom .container .wrapper .rightContent .bottom p {
+  line-height: 1.6em;
+}
+
+main
+  article
+  .articleBottom
+  .container
+  .wrapper
+  .rightContent
+  .bottom
+  .infoBtns {
+  margin-top: 50px;
+}
+
+main
+  article
+  .articleBottom
+  .container
+  .wrapper
+  .rightContent
+  .bottom
+  .infoBtns
+  a {
+  display: inline-block;
+  width: 47.5%;
+  border: 1px solid #a8a8a8;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+main
+  article
+  .articleBottom
+  .container
+  .wrapper
+  .rightContent
+  .bottom
+  .infoBtns
+  a
+  img {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+
+main
+  article
+  .articleBottom
+  .container
+  .wrapper
+  .rightContent
+  .bottom
+  .infoBtns
+  a:nth-child(2) {
+  color: #06be34;
+  border: 1px solid #06be34;
+  margin-left: 3%;
+}
+
+/* footer */
+footer {
+  padding: 50px 0 100px 0;
+}
+
+footer .container .wrapper {
+  position: relative;
+}
+
+footer .container .wrapper ul {
+  display: flex;
+  /* justify-content: center; */
+}
+
+footer .container .wrapper ul li {
+  padding: 0 20px;
+}
+
+footer .container .wrapper ul li:nth-child(1) {
+  padding-left: 0;
+}
+
+footer .container .wrapper ul li:nth-child(2) {
+  border-left: 1px solid #c7c7c7;
+  border-right: 1px solid #c7c7c7;
+}
+
+footer address {
+  padding: 50px 0 30px 0;
+  line-height: 1.8em;
+  font-size: 14px;
+}
+
+footer address span {
+  margin-right: 15px;
+}
+
+footer address span:first-child {
+  color: #293f3a;
+  font-weight: 700;
+}
+
+footer p {
+  color: #919191;
+  font-size: 14px;
+}
+
+footer .footerLogo {
+  text-align: center;
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+footer .footerLogo a {
+  display: block;
+  width: 117px;
+  height: 80px;
+  margin-top: 20px;
+}
+
+footer .footerLogo a img {
+  width: 100%;
+  /* height: 100%; */
 }
