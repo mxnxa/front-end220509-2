@@ -66,13 +66,15 @@ header .nav .topNav > li:hover .subNav {
 
 header .nav .topNav li .subNav {
   position: absolute;
-  top: 90px;
+  top: 50px;
+  left: 0;
   display: none;
   width: 100% !important;
   text-align: center;
   border: 1px solid #ddd;
   background-color: #fff;
   box-sizing: border-box;
+  z-index: 999;
 }
 
 header .nav .topNav li .subNav li + li {
@@ -109,6 +111,7 @@ main .visual .container {
 }
 
 main .visual .title {
+  color: #222;
   position: absolute;
   top: 50%;
   left: 350px;
@@ -238,7 +241,8 @@ main article .articleBottom .wrapper {
 
 main article .articleBottom .container .wrapper .leftContent .top {
   border: 1px solid #a8a8a8;
-  border-radius: 11px;
+  border-right: none;
+  border-radius: 11px 0 0 11px;
   background-color: #fff;
   box-sizing: border-box;
 }
@@ -332,20 +336,23 @@ main article .articleBottom .container .wrapper .rightContent {
   width: 40%;
   color: #fff;
   box-sizing: border-box;
+  border-radius: 0 15px 0 0;
 }
 
 main article .articleBottom .container .wrapper .rightContent .top {
   background: url(./images/img_info.jpg) no-repeat 50%;
   background-size: cover;
   padding: 100px 45px 50px 45px;
+  border-radius: 0 23px 0 0;
   box-sizing: border-box;
   line-height: 2.5em;
 }
 
 main article .articleBottom .container .wrapper .rightContent .top h4 {
-  font-family: "Noto Serif KR";
+  /* font-family: "Noto Serif KR"; */
   font-size: 28px;
   font-weight: 100;
+  /* font-family: "adobe-garamond-pro"; */
 }
 
 main article .articleBottom .container .wrapper .rightContent .bottom {
