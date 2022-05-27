@@ -1,0 +1,35 @@
+@import url(../css/header.css);
+.container {
+  height: 100px;
+  background-color: red;
+}
+
+.container header {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  background-image: url(../../12/images/3.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: orange;
+  background-color: lightblue;
+}
+
+.container header::after {
+  content: "after";
+}
+
+.container header.active {
+  color: blanchedalmond;
+}
+
+.container h1 {
+  font-size: 100px;
+}
+
+nav .box {
+  width: 100px;
+  height: 200px;
+}
+/*# sourceMappingURL=index.css.map */

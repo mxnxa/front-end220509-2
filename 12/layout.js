@@ -23,3 +23,13 @@ popupBtn.addEventListener("click", () => {
   document.body.style.overflow = "auto";
   popupBg.style.display = "none";
 });
+
+// slider
+let btns = document.querySelectorAll(".slider .btns .btn");
+let sliderUl = document.querySelector(".slider .sliderContainer ul");
+
+btns.forEach(function (btn, idx) {
+  btn.addEventListener("click", function () {
+    sliderUl.style.transform = `translateX(${-600 * idx}px)`;
+  });
+});

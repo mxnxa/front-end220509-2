@@ -1,0 +1,50 @@
+$main_color: lightblue;
+$sub_color: green;
+
+.container {
+  height: 100px;
+  background-color: red;
+  header {
+    // & : 자기 자신
+    // 가상클래스나 가상요소, 클래스 여부
+    &::after {
+      content: "after";
+    }
+    &.active {
+      color: blanchedalmond;
+    }
+
+    // 단축속성 안에 나열 가능
+    margin: {
+      top: 10px;
+      left: 20px;
+    }
+    font: {
+      size: 20px - 5px;
+      weight: 700;
+    }
+    background: {
+      image: url(../../12/images/3.jpg);
+      size: contain;
+      repeat: no-repeat;
+      color: orange;
+    }
+    background-color: $main_color;
+  }
+  h1 {
+    font-size: 100px;
+  }
+}
+
+@mixin box($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+nav {
+  .box {
+    @include box(100px, 200px);
+  }
+}
+
+@import url(../css/header.css);
