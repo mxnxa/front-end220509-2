@@ -157,4 +157,22 @@ async function getData(title) {
   return detail;
 }
 
-getData("Loco");
+getData("Loco").then((res) => {
+  console.log(res);
+});
+
+// 데이터 받아오는 함수. 1초 => .then으로 출력
+
+let getProduct = new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    resolve({
+      title: "iphon",
+      version: 12,
+    });
+  }, 1000);
+});
+
+let resultElem = document.querySelector(".result");
+getProduct.then((res) => {
+  resultElem.innerHTML = `<p>제품명 : ${res.title + res.version}</p>`;
+});
