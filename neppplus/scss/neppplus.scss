@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "S-CoreDream-4Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "S-CoreDream-4Regular";
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    .subMenu {
+      display: flex;
+    }
+  }
+
+  .logo {
+    a {
+      display: block;
+      height: 60px;
+      padding: 8px 0;
+      box-sizing: border-box;
+      img {
+        width: 89px;
+        height: 44px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .inline {
+    width: 105px;
+    height: 100%;
+  }
+
+  .mainMenu {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 20px;
+
+    nav {
+      height: 100%;
+
+      ul {
+        display: flex;
+        height: 100%;
+
+        li {
+          width: 180px;
+
+          > a {
+            display: block;
+            height: 100%;
+            line-height: 60px;
+            text-align: center;
+            color: #333;
+            font-size: 16px;
+            font-weight: 700;
+            transition-duration: 0.3s;
+            &:hover {
+              color: rgba(49, 51, 57, 0.5);
+            }
+          }
+        }
+      }
+    }
+  }
+  .subMenu {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    height: 240px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 999;
+    // opacity: 0;
+    transition-duration: 0.3s;
+
+    background-color: rgba(238, 241, 247, 0.95);
+    ul {
+      width: 180px;
+      li {
+        text-align: center;
+        line-height: 1.8;
+        a {
+          display: block;
+          color: #666;
+          font-size: 14px;
+          font-family: "S-CoreDream-4Regular";
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+}
+
+main {
+  .visual {
+    .slideShow {
+      width: 100%;
+      height: 600px;
+      background-color: #e8e8e8;
+      position: relative;
+      overflow: hidden;
+
+      .slides {
+        display: flex;
+        align-items: center;
+
+        img {
+          //   width: 100%;
+          height: 100%;
+        }
+      }
+
+      .slideBtn {
+        button {
+          width: 48px;
+          height: 48px;
+          font-size: 24px;
+          color: #fff;
+          outline: none;
+          background: none;
+          border: 1px solid rgba(255, 255, 255, 0.6);
+          border-radius: 50%;
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+
+          &.prev {
+            left: 20px;
+          }
+          &.next {
+            right: 20px;
+          }
+        }
+      }
+
+      .slideControls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 95px;
+        height: 20px;
+        position: absolute;
+        z-index: 1000;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        span {
+          display: block;
+          width: 11px;
+          height: 11px;
+          background-color: #fff;
+          border-radius: 50%;
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .btnWrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .btnGroup {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 1280px;
+      height: 100%;
+    }
+
+    .btn {
+      display: block;
+      width: 256px;
+      text-align: center;
+      transition-duration: 0.3s;
+    }
+
+    .topMenu {
+      height: 90px;
+      background-color: #313339;
+
+      ul.btnGroup {
+        li {
+          a.btn {
+            height: 90px;
+            line-height: 90px;
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.9);
+
+            &:hover {
+              color: #313339;
+              background-color: rgba(255, 255, 255, 0.9);
+            }
+          }
+        }
+      }
+    }
+
+    .bottomMenu {
+      height: 46px;
+      background-color: #fed400;
+
+      ul.btnGroup {
+        li {
+          a {
+            height: 46px;
+            line-height: 46px;
+            font-size: 18px;
+            color: #313339;
+
+            &:hover {
+              color: #fff;
+              background-color: rgba(49, 51, 57, 0.9);
+            }
+          }
+        }
+      }
+    }
+    .tel {
+      width: 100%;
+      height: 46px;
+      line-height: 46px;
+      text-align: center;
+
+      strong {
+        font-size: 1.286em;
+        font-weight: 700;
+      }
+      span {
+        font-size: 1.286em;
+        color: rgb(129, 131, 137);
+      }
+    }
+  }
+}

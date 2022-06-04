@@ -6,16 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../reset.css" />
-    <link rel="stylesheet" href="./neppplus.css" />
+    <link rel="stylesheet" href="./css/neppplus.css" />
+    <script src="./neppplus.js" defer></script>
   </head>
   <body>
     <header>
-      <div class="nav">
-        <div class="logo inline"><a href="">Nepp</a></div>
-        <div class="menu">
-          <ul>
-            <li><a href="">넵플러스소개</a></li>
-            <li><a href="">취업종합과정</a></li>
+      <div class="mainMenu">
+        <div class="logo inline">
+          <a href="https://neppplus.com/" target="_blank">
+            <img src="./images/logo.png" alt="넵플러스" />
+          </a>
+        </div>
+        <nav>
+          <ul class="gnbList">
+            <li>
+              <a href="">넵플러스소개</a>
+            </li>
+            <li>
+              <a href="">취업종합과정</a>
+            </li>
             <li><a href="">단과과정</a></li>
             <li><a href="">국비제도안내</a></li>
             <li><a href="">상담예약</a></li>
@@ -23,65 +32,92 @@
             <li><a href="">수강생메뉴</a></li>
             <li><a href="">개인결제</a></li>
           </ul>
-        </div>
+        </nav>
         <div class="inline"></div>
       </div>
-      <div class="dropdown">
-        <div class="titleMenu"></div>
-        <div class="titleMenu">
-          <ul>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-          </ul>
-        </div>
-        <div class="titleMenu">
-          <ul>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-          </ul>
-        </div>
-        <div class="titleMenu">
-          <ul>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-          </ul>
-        </div>
-        <div class="titleMenu"></div>
-        <div class="titleMenu">
-          <ul>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-          </ul>
-        </div>
-        <div class="titleMenu">
-          <ul>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-            <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
-          </ul>
-        </div>
-        <div class="titleMenu"></div>
+      <div class="subMenu">
+        <ul></ul>
+        <ul>
+          <li><a href="">코틀린 안드로이드 앱 개발자</a></li>
+          <li><a href="">프론트엔드 웹 개발 양성</a></li>
+          <li><a href="">자바 & 스프링 백엔드 SW개발자</a></li>
+          <li><a href="">빅데이터를 위한 파이썬 프로그래밍</a></li>
+          <li><a href="">블록체인&핀테크 프로그래밍</a></li>
+          <li><a href="">머신러닝&인공지능 플랫폼</a></li>
+        </ul>
+        <ul>
+          <li><a href="">안드로이드 개발 기초</a></li>
+          <li><a href="">SQL개발자(SQLD)자격증</a></li>
+          <li><a href="">자바(JAVA) 프로그래밍 입문</a></li>
+          <li><a href="">프론트엔드 웹 개발 기초</a></li>
+          <li><a href="">리액트(React.js) 프로그래밍</a></li>
+          <li><a href="">파이썬(Python) 프로그래밍</a></li>
+          <li><a href="">컴퓨터활용능력 1, 2급</a></li>
+        </ul>
+        <ul>
+          <li><a href="">국민내일배움카드 안내</a></li>
+          <li><a href="">국책산업직종훈련 안내</a></li>
+          <li><a href="">국민취업지원제도 안내</a></li>
+        </ul>
+        <ul></ul>
+        <ul>
+          <li><a href="">공유오피스 안내</a></li>
+          <li><a href="">프라이빗 룸</a></li>
+          <li><a href="">오픈오피스</a></li>
+          <li><a href="">비상주 사무실</a></li>
+          <li><a href="">공지사항</a></li>
+        </ul>
+        <ul>
+          <li><a href="">공지사항</a></li>
+          <li><a href="">수강후기</a></li>
+          <li><a href="">익명 건의 게시판</a></li>
+        </ul>
+        <ul></ul>
       </div>
     </header>
-    <script src="./neppplus.js"></script>
+    <main>
+      <div class="visual">
+        <div class="slideShow">
+          <div class="slides">
+            <img src="./images/slide1.png" alt="" />
+            <img src="./images/slide2.png" alt="" />
+            <img src="./images/slide3.jpg" alt="" />
+            <img src="./images/slide4.jpg" alt="" />
+          </div>
+          <div class="slideBtn">
+            <button class="prev">&lang;</button>
+            <button class="next">&rang;</button>
+          </div>
+          <div class="slideControls">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="topMenu btnWrap">
+          <ul class="btnGroup">
+            <li><a class="btn" href="">온라인 상담</a></li>
+            <li><a class="btn" href="">수강료 조회</a></li>
+            <li><a class="btn" href="">국비지원 조회</a></li>
+            <li><a class="btn" href="">캠퍼스 위치</a></li>
+            <li><a class="btn" href="">수강생 후기</a></li>
+          </ul>
+        </div>
+        <div class="bottomMenu btnWrap">
+          <ul class="btnGroup">
+            <li><a class="btn" href="">카카오톡</a></li>
+            <li><a class="btn" href="">네이버블로그</a></li>
+            <li><a class="btn" href="">인스타그램</a></li>
+            <li><a class="btn" href="">페이스북</a></li>
+            <li><a class="btn" href="">유튜브</a></li>
+          </ul>
+        </div>
+        <div class="tel">
+          <strong>02) 2088-0739</strong>
+          <span>주말·공휴일 상담 및 접수 가능합니다.</span>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
