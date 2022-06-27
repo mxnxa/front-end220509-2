@@ -38,7 +38,7 @@
   border: none;
   background: none;
   height: 100%;
-  transition: background-color 0.5s;
+  transition: all 0.5s;
 }
 
 .slideShow .btns button:hover {

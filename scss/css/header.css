@@ -1,10 +1,14 @@
+header {
+  background-color: #b4b4b4;
+}
+
 header #gnb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 header #gnb a {
@@ -19,11 +23,12 @@ header #gnb .gnbList {
   overflow: hidden;
   background-color: #e8e8e8;
   -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
+  transition-duration: 0.25s;
 }
 
 header #gnb .gnbList:hover {
   height: 160px;
+  /* background-color: #fff; */
 }
 
 header #gnb .gnbList > li:hover {
@@ -41,7 +46,7 @@ header #gnb .gnbList li .depth01 {
   font-weight: 700;
   padding: 0 30px;
   -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
+  transition-duration: 0.25s;
 }
 
 header #gnb .gnbList li .depth02 li:hover {
