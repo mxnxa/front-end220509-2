@@ -1,7 +1,7 @@
 const slide = document.querySelector(".slide");
-const slideImg = document.querySelectorAll(".slide img");
+const slideImg = document.querySelectorAll(".slide img").length;
 let currentIdx = 0;
-const slideCount = slideImg.length;
+// const slideCount = slideImg.length;
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 
@@ -15,7 +15,7 @@ prev.addEventListener("click", function () {
 });
 
 next.addEventListener("click", () => {
-  if (currentIdx !== slideCount - 1) moveSlide(currentIdx + 1);
+  if (currentIdx !== slideImg - 1) moveSlide(currentIdx + 1);
 });
 
 // prev.addEventListener("click", function () {
